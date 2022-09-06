@@ -110,7 +110,7 @@
 
     .top {
         position: absolute;
-        width: 360px;
+        width: 100%;
         height: 40px;
         left: 0px;
         top: -11px;
@@ -157,7 +157,7 @@
 
     .btnContinue {
         position: absolute;
-        width: 360px;
+        width: 100%;
         height: 58px;
         right: 0px;
         bottom: 0px;
