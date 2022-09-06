@@ -85,7 +85,6 @@
         padding: 0px;
         background-color: #8E05C2;
         justify-content: flex-start;
-        position: fixed;
     }
 
     .title{
@@ -101,7 +100,10 @@
 
     .explain{
         font-size: 14px;
-        height: 100%;
+        height: auto;
+        min-height: 70%;
+        max-height: 80%;
+        justify-content: start;
     }
     .explain img{
         height: 100%;
