@@ -79,9 +79,9 @@
     background-color: #700B97;
     border-radius: 20px;
     border: 1px solid #3E065F;
-    width: 200px;
-    height: 90px;
-    margin-left: 50%;
+    width: 80%;
+    height: 60px;
+    margin-right: -0%;
 }
 
 .btnContinue:hover {
