@@ -21,9 +21,11 @@ const Home: NextPage<Props> = ({host}) => {
       alternatives={["Sim", "Não","Talvez","Não Sei"]}
       question={"Pensando na vida, você considera que está?"}
       /> */}
+      
+    
 
       <ExplanatoryCard
-      img='http://localhost:3000/demonstracao-teorema-pitagoras-2.gif'
+      img='https://www.matematica.pt/images/faq/demonstracao-teorema-pitagoras-2.gif'
       > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a augue vel neque facilisis ullamcorper a ac est. Donec sagittis lacinia facilisis. Vestibulum fringilla congue fringilla. Aenean mollis pulvinar ante vitae sagittis. Mauris porttitor nulla vulputate, efficitur lacus at, accumsan tortor. Ut sollicitudin mi eget ante blandit finibus. Nulla facilisi. In mattis turpis sodales nulla luctus, in tempor nisi rhoncus. Cras finibus sit amet augue sit amet vestibulum. Cras dignissim egestas urna, finibus volutpat diam porta quis. Morbi scelerisque ut erat vitae commodo. Phasellus vitae risus in augue viverra vestibulum. Integer id pharetra nisi. Phasellus non porttitor ligula, ut posuere libero. Sed non scelerisque justo. Vestibulum elementum, est eget euismod rhoncus, sapien nunc dignissim libero, eget semper velit lacus eu arcu. </ExplanatoryCard>
     </div>
   )
