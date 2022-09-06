@@ -84,7 +84,7 @@
         border-radius: 0;
         padding: 0px;
         background-color: #8E05C2;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .title{
