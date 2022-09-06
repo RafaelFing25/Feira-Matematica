@@ -10,9 +10,14 @@ interface InputProps {
   children: String
 }
 
+interface CardProps {
+  alternatives: Array<string>,
+  question: string
+}
+
 const selecteds: Array<string> = []
 
-const CardMultiple: React.FC = () => {
+const CardMultiple: React.FC<CardProps> = ({question, alternatives}) => {
 
   const [selectedLetter, setSelectedLetter] = useState('')
 
@@ -31,23 +36,20 @@ const CardMultiple: React.FC = () => {
       </div>
       <div className={styles.question}>
         <div className={styles.questionText}>
-          <p>Alguma questão de problema exemplo,
-            em que resposta seria de multipla esclha(alternativas)
-            presentes abaixo:</p>
-
+          <p>{question}</p>
         </div>
         <div className={styles.alternatives}>
           <Input onClick={makeSelect} selected={selectedLetter} letter='a'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel. 
+            {alternatives[0]} 
           </Input>
           <Input onClick={makeSelect} selected={selectedLetter} letter='b'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel. 
+            {alternatives[1]} 
           </Input>
           <Input onClick={makeSelect} selected={selectedLetter} letter='c'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel. 
+            {alternatives[2]}
           </Input>
           <Input onClick={makeSelect} selected={selectedLetter} letter='d'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel. 
+            {alternatives[3]} 
           </Input>
         </div>
       </div>
