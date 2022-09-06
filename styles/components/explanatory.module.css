@@ -108,5 +108,14 @@
         width: 100%;
     }
 
+    .footer{
+        height: 62px;
+        margin-bottom: 5px;
+    }
+    .footer button{
+        width: 150px;
+        height: 60px;
+    }
+
    
 }
