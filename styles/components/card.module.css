@@ -100,12 +100,14 @@
         border-radius: 0;
         padding: 0px;
         background-color: #7c7878;
+        justify-content: flex-start;
     }
 
     .title {
         font-size: 20px;
         top: 5px;
         margin-top: 5px;
+        background-color: white;
     }
 
     .top {
@@ -123,17 +125,30 @@
     }
 
     .question {
-        margin-top: 5px;
+        margin-top: 50px;
         font-size: 16px;
-        width: auto;
-        height: auto;
+        width: 80%;
+        min-width: 300px;
+        max-width: 600px;
+        height: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        background-color: blue;
     }
 
     .questionText {
-        background-color: #700B97;
+        background-color: red;
         border-radius: 23px;
-        width: 321px;
+        width: auto;
+        max-width: 80%;
         height: 180px;
+    }
+
+    .questionText p{
+        padding: 20px;
+        font-size: 1rem;
     }
 
     .alternatives {
@@ -146,12 +161,12 @@
     }
 
     .btn {
-        width: 270px;
+        width: auto;
         height: 57px;
     }
 
     .btnSelected {
-        width: 270px;
+        width: auto;
         height: 57px;
     }
 
