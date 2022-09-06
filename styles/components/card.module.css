@@ -101,6 +101,7 @@
         padding: 0px;
         background-color: #8E05C2;
         justify-content: flex-start;
+        position: fixed;
     }
 
     .title {
@@ -163,7 +164,6 @@
         margin-top: 30px;
         font-size: 12px;
         display: flex;
-        justify-content: space-between;
     }
 
     .alternativeText {
@@ -175,11 +175,15 @@
         max-width: 800px;
         min-width: 300px;
         height: 57px;
+        margin-bottom: 10px;
     }
 
     .btnSelected {
         width: auto;
+        max-width: 800px;
+        min-width: 300px;
         height: 57px;
+        margin-bottom: 10px;
     }
 
     .btnContinue {
