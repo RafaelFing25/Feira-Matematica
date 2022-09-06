@@ -100,7 +100,7 @@
         border-radius: 0;
         padding: 0px;
         background-color: #7c7878;
-        justify-content: flex-start;
+
     }
 
     .title {
@@ -130,29 +130,30 @@
         width: 80%;
         min-width: 300px;
         max-width: 600px;
-        height: 80%;
+        height: auto;
+        min-height: 75%;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        align-items: inherit;
         border-radius: 20px;
         background-color: blue;
     }
 
     .questionText {
+        margin-top: 10%;
         background-color: red;
         border-radius: 23px;
         width: auto;
-        max-width: 80%;
+        max-width: 95%;
         height: 180px;
     }
 
     .questionText p{
-        padding: 20px;
+        padding: 10px;
         font-size: 1rem;
     }
 
     .alternatives {
-        margin-top: 10px;
+        margin-top: 50%;
         font-size: 12px;
     }
 
