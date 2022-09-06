@@ -143,7 +143,8 @@
         background-color: #3E065F;
         border-radius: 23px;
         width: auto;
-        max-width: 95%;
+        max-width: 900px;
+        min-width: 340px;
         height: 180px;
         display: flex;
         justify-content: center;
@@ -156,8 +157,13 @@
     }
 
     .alternatives {
+        border-radius: 15px;
+        height: auto;
+        min-height: 60%;
         margin-top: 30px;
         font-size: 12px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .alternativeText {
@@ -166,6 +172,8 @@
 
     .btn {
         width: auto;
+        max-width: 800px;
+        min-width: 300px;
         height: 57px;
     }
 
