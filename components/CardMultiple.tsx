@@ -12,12 +12,13 @@ interface InputProps {
 
 interface CardProps {
   alternatives: Array<string>,
-  question: string
+  question: string,
+  onCheck: (selectedLetter: string)=>void,
 }
 
 const selecteds: Array<string> = []
 
-const CardMultiple: React.FC<CardProps> = ({question, alternatives}) => {
+const CardMultiple: React.FC<CardProps> = ({question, alternatives, onCheck}) => {
 
   const [selectedLetter, setSelectedLetter] = useState('')
 
@@ -28,6 +29,10 @@ const CardMultiple: React.FC<CardProps> = ({question, alternatives}) => {
   useEffect(() => {
     console.log(selectedLetter)
   }, [selectedLetter])
+
+  function handleSumbit(event: React.MouseEvent<HTMLButtonElement, globalThis.MouseEvent>){
+    onCheck(selectedLetter)
+  }
 
   return (
     <div className={styles.container}>
@@ -53,7 +58,7 @@ const CardMultiple: React.FC<CardProps> = ({question, alternatives}) => {
           </Input>
         </div>
       </div>
-      <button className={styles.btnContinue}>Continuar</button>
+      <button onClick={handleSumbit} className={styles.btnContinue}>Continuar</button>
     </div>
   )
 }
