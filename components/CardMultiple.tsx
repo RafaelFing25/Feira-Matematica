@@ -78,7 +78,7 @@ const Input: React.FC<InputProps> = ({ children, letter, selected, onClick }) =>
     } else {
       setSelected(false)
     }
-  })
+  },[selected, letter])
   useEffect(() => {
     if (isSelected) {
       setClass(styles.btnSelected)

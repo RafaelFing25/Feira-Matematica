@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+import Image from 'next/image';
 import React from 'react';
 
 import styles from '../styles/components/explanatory.module.css'
@@ -18,7 +18,7 @@ const ExplanatoryCard: React.FC<Props> = ({img, children}) => {
             <div className={styles.explain}>
                 <p>{children}</p>
                 {img ?
-                <img src={img} alt="test" /> : ''
+                <Image src={img} width={200} height={200} alt="test" /> : ''
             }
                 
             </div>

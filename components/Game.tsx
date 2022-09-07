@@ -4,9 +4,32 @@ import CardMultiple from './CardMultiple';
 import db from '../db.json'
 import ExplanatoryCard from './ExplanatoryCard';
 
+
+
 interface Props{
   sequence: Array<number>
   explainCards: Array<number>
+}
+
+type Card = {
+            id: number,
+            type:string,
+            question:string,
+            alternatives:Array<string>,
+            correct:string,
+            explainId: number
+}
+
+type Explain = {
+  id:number,
+            referenceId: number,
+            explain: string,
+            image: string
+}
+
+interface DBtype{
+  Cards:Array<Card>,
+  ExplainCards: Array<Explain>
 }
 
 const Game: React.FC<Props> = ({sequence, explainCards}) => {
@@ -14,7 +37,7 @@ const Game: React.FC<Props> = ({sequence, explainCards}) => {
   useEffect(()=>{
     console.log('aaaaaaaaaaaaaaaaaaaa')
     setSequence(sequence)
-  })
+  },[sequence])
 
   const [sequenceIds, setSequence] = useState([] as Array<number>)
   const [currentCard, SetCurrentCard] = useState(0)
