@@ -1,29 +1,43 @@
-import type { GetServerSideProps, NextPage } from 'next'
+import type { NextPage } from 'next'
 import Head from 'next/head'
-import CardMultiple from '../components/CardMultiple'
-import ExplanatoryCard from '../components/ExplanatoryCard'
-import Game from '../components/Game'
-import Wrong from '../components/Worng'
+import { useState } from 'react'
+
+
+import Play from '../components/Play'
+
+
 import styles from '../styles/Home.module.css'
 
-const Home: NextPage<Props> = ({host}) => {
+const Home: NextPage<Props> = () => {
+
+  const [play, setPlay] = useState(false)
+  const [instructions, setInstructions] = useState(false)
+  const [about, setAbout] = useState(false)
+
+
+
   return (
     <div className={styles.container}>
       <Head>
         <title>Feirinha</title>
         <meta name="description" content="app feira" />
         <link rel="icon" href="/favicon.ico" />
-        
+
       </Head>
 
-      {/* <CardMultiple
-      alternatives={["Sim", "Não","Talvez","Não Sei"]}
-      question={"Pensando na vida, você considera que está?"}
-      /> */}
-      
-    
+      <div className={styles.side}>
+        <div className={styles.options}>
+          <h1 className={styles.option} onClick={() => {setPlay(true);setInstructions(false);setAbout(false) } }>Jogar</h1>
+          <h1 className={styles.option} onClick={() => {setPlay(false);setInstructions(true);setAbout(false) }}>Instruçoẽs</h1>
+          <h1 className={styles.option} onClick={() => {setPlay(false);setInstructions(false);setAbout(true) }}>Sobre</h1>
+        </div>
+      </div>
 
-      <Wrong></Wrong>
+      <div className={styles.content}>
+        <h1>Seja bem vindo!</h1>
+        {play ? <Play /> : ''}
+      </div>
+
     </div>
   )
 }
@@ -32,7 +46,7 @@ type Props = {
   host: string | null
 }
 
-export const getServerSideProps: GetServerSideProps<Props> = async context => ({ props: { host: context.req.headers.host || null } })
+
 
 
 export default Home

@@ -58,7 +58,7 @@ const CardMultiple: React.FC<CardProps> = ({question, alternatives, onCheck}) =>
           </Input>
         </div>
       </div>
-      <button onClick={handleSumbit} className={styles.btnContinue}>Continuar</button>
+      <button onClick={handleSumbit} className={styles.btnContinue}>Confirmar</button>
     </div>
   )
 }

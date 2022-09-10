@@ -3,8 +3,31 @@
   height: 100vh;
   background-image: linear-gradient(#8E05C2, #0a000e);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
+.side{
+  width: 200px;
+  height: 500px;
+  background-color: #8E05C2;
+  margin-left:10px;
+  display: flex;
+  align-items: center;
+  padding: 20px ;
+  border-radius: 5px;
+}
+
+
+
+.option{
+  background: rgb(112,11,151);
+background: linear-gradient(217deg, rgba(112,11,151,1) 17%, rgba(142,5,194,1) 50%, rgba(62,6,95,1) 97%);
+border-radius: 20px;
+padding: 10px;
+}
+
+.content{
+  margin-left: 300px;
+}
 

@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(112,11,151);
+    background: linear-gradient(217deg, rgba(112,11,151,1) 17%, rgba(142,5,194,1) 50%, rgba(62,6,95,1) 97%);
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+
+}
+
+.content{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100vw;
+}
+
+
+@media only screen and (max-width: 850px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
