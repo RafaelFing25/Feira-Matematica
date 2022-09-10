@@ -3,7 +3,7 @@
         {
             "id": 1,
             "type":"select",
-            "question":"sto é apenas um teste, mas pense que não seja um teste e clique em algum botão ai:)",
+            "question":"isto é apenas um teste, mas pense que não seja um teste e clique em algum botão ai:)",
             "alternatives":["sim","nao","isoo é um teste pra q responder", "alternativa 4"],
             "correct":"c",
             "explainId": 1
