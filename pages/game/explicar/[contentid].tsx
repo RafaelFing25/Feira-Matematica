@@ -11,7 +11,7 @@ interface props {
   mode: string;
 }
 
-const game: NextPage<props> = ({ mode }) => {
+const GamePage: NextPage<props> = ({ mode }) => {
 
   const props = {
     explainCards: db.Contents[0].ExplainCards,
@@ -33,10 +33,11 @@ const game: NextPage<props> = ({ mode }) => {
       {
         !query.contentid ? 'Caregando' :
           <Game
+
             explainCards={props.explainCards}
             cards={props.cards} />
       }
     </div>
   )
 }
-export default game;
+export default GamePage;

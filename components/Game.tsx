@@ -25,7 +25,7 @@ interface ExplainCards {
 }
 
 interface Props {
-  cards: Array<Card>
+  cards: Array<Card>,
   explainCards: Array<ExplainCards>
 }
 
