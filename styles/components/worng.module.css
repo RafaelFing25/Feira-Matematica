@@ -1,0 +1,23 @@
+.container {
+    background-color: #8612B2;
+    width: 200px;
+    height: 100px;
+    padding: 2px;
+    border: #3E065F solid 2px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+ .h1{
+    font-size: 20px;
+ }
+
+ .btn {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border-color: #3E065F;
+}

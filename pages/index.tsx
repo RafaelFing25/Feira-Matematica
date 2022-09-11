@@ -1,26 +1,52 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import CardMultiple from '../components/CardMultiple'
+import { useState } from 'react'
+
+
+import Play from '../components/Play'
+
+
 import styles from '../styles/Home.module.css'
 
-const Home: NextPage = () => {
+const Home: NextPage<Props> = () => {
+
+  const [play, setPlay] = useState(false)
+  const [instructions, setInstructions] = useState(false)
+  const [about, setAbout] = useState(false)
+
+
+
   return (
     <div className={styles.container}>
       <Head>
         <title>Feirinha</title>
         <meta name="description" content="app feira" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='true'/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,900&display=swap" rel="stylesheet" />
+
       </Head>
 
-      <CardMultiple
-      alternatives={["Sim", "Não","Talvez","Não Sei"]}
-      question={"Pensando na vida, você considera que está vivendo?"}
-      />
+      <div className={styles.side}>
+        <div className={styles.options}>
+          <h1 className={styles.option} onClick={() => {setPlay(true);setInstructions(false);setAbout(false) } }>Jogar</h1>
+          <h1 className={styles.option} onClick={() => {setPlay(false);setInstructions(true);setAbout(false) }}>Instruçoẽs</h1>
+          <h1 className={styles.option} onClick={() => {setPlay(false);setInstructions(false);setAbout(true) }}>Sobre</h1>
+        </div>
+      </div>
+
+      <div className={styles.content}>
+        <h1>Seja bem vindo!</h1>
+        {play ? <Play /> : ''}
+      </div>
+
     </div>
   )
 }
+
+type Props = {
+  host: string | null
+}
+
+
+
 
 export default Home
