@@ -25,7 +25,7 @@ interface Contents{
     }[];
 }
 
-const estudo: NextPage = () => {
+const Estudo:NextPage = () => {
 
     const [contents, setContents] = useState([] as Array<Contents>)
     useEffect(()=>{
@@ -38,9 +38,9 @@ const estudo: NextPage = () => {
                 <h1>Modo estudo</h1>
             </div>
             <div className={styles.content}>
-                {contents.map((content)=>(<MiniCard content={content}/>))}
+                {contents.map((content, index)=>(<MiniCard key={index} content={content}/>))}
             </div>
         </div>
     )}
 
-export default estudo;
+export default Estudo;
