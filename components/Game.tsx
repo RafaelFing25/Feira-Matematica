@@ -5,6 +5,8 @@ import db from '../db.json'
 import ExplanatoryCard from './ExplanatoryCard';
 import Wrong from './Worng';
 import Right from './Right';
+import Router from 'next/router';
+
 
 
 
@@ -41,6 +43,16 @@ const Game: React.FC<Props> = ({ cards, explainCards }) => {
   const [sequenceIds, setSequence] = useState([] as Props["cards"])
   const [currentCard, SetCurrentCard] = useState(0)
   const [renderTime, setRenderTime] = useState('card')
+
+  function advance(){
+    if(currentCard +1 >= cards.length){
+      Router.push('/estudo')
+    }else{
+      SetCurrentCard(currentCard + 1)
+      setRenderTime('card')
+    }
+  }
+
   function controller(render: string) {
     if (render == 'card') {
       const nowCard = cards[currentCard]
@@ -59,11 +71,16 @@ const Game: React.FC<Props> = ({ cards, explainCards }) => {
       return (
         <ExplanatoryCard
           img={nowExplain.image}
+          advance={advance}
         >{nowExplain.explain}</ExplanatoryCard>
       )
     } else if (render == 'wrong') {
+      const letter = cards[currentCard].correct
+      const alphabet = ['a','b','c','d']
+      const index = alphabet.indexOf(letter)
       return (
         <Wrong
+          correct={cards[currentCard].alternatives[index]}
           onClick={() => { setRenderTime('explain') }}
         />
       )

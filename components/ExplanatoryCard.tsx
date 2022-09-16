@@ -6,10 +6,17 @@ import styles from '../styles/components/explanatory.module.css'
 
 interface Props{
     img?: string,
-    children: string
+    children: string,
+    advance:()=>void
 }
 
-const ExplanatoryCard: React.FC<Props> = ({img, children}) => {
+const ExplanatoryCard: React.FC<Props> = ({img, children , advance}) => {
+
+    function moreAbout(){
+        window.location.href = 'https://google.com'
+    }
+
+
     return (
         <div className={styles.container}>
             <div className={styles.title}>
@@ -23,8 +30,8 @@ const ExplanatoryCard: React.FC<Props> = ({img, children}) => {
                 
             </div>
             <div className={styles.footer}>
-                <button>Saiba Mais</button>
-                <button>Avançar</button>
+                <button onClick={moreAbout}>Saiba Mais</button>
+                <button onClick={advance}>Avançar</button>
             </div>
         </div>
     )

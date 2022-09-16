@@ -31,3 +31,30 @@ padding: 10px;
   margin-left: 300px;
 }
 
+
+@media only screen and (max-width: 850px) {
+
+  .container{
+    display: block;
+    background-color: #eeebf0;
+  }
+
+  .content{
+    display: flex;
+  }
+
+  .content h1{
+    display: none;
+  };
+
+  .side{
+    width: 100vw;
+    height: 100vh;
+    background-color: #e8e6e9;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
