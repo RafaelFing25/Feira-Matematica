@@ -11,21 +11,21 @@ const Play: React.FC = () => {
                 <p>Escolha um modo:</p>
             </div>
             <div className={styles.content}>
-                <div>
                     <Link href="/estudo">
+                <div>
                         <a>Estudo</a>
-                    </Link>
                 </div>
+                    </Link>
+                    <Link href="/breve">
                 <div>
-                    <Link href="/game">
                         <a>Competitivo (Em breve)</a>
-                    </Link>
                 </div>
+                    </Link>
+                    <Link href="/breve">
                 <div>
-                    <Link href="/game">
                         <a>Casual (Em breve)</a>
-                    </Link>
                 </div>
+                    </Link>
             </div>
         </div>
     );

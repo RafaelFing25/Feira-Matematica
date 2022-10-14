@@ -1,0 +1,49 @@
+.container{
+    position: absolute;
+    top:0px;
+    background: #8E05C2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top{
+    display: flex;
+    width: 100%;
+}
+
+.text{
+    text-align: center;
+    margin-left: 20%;
+}
+
+.container img{
+    width: 60px;
+    height: 60px;
+}
+
+.content{
+    margin-top:30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+}
+
+.content div{
+    width: 100%;
+    height: 70px;
+    background: rgb(112,11,151);
+  background: linear-gradient(217deg, rgba(112,11,151,1) 17%, rgba(142,5,194,1) 50%, rgba(62,6,95,1) 97%);
+  border-radius: 20px;
+  padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    text-align: center;
+    margin: 20px;
+}
