@@ -2,6 +2,53 @@
     "Contents": [
         {
             "id": 1,
+            "name": "Geometria",
+            "description":"A geometria é uma área da matemática que estuda as formas geométricas desde comprimento, área e volume.",
+            "Cards": [
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "As seguintes letras: a=? ; b=?; l=? ; h? ; D=?, usadas para resolver geometria, em ordem, correspondem à:",
+                    "alternatives": [
+                        "área, base, lado, horizonte e diâmetro",
+                        "área, base, lado, altura e diâmetro",
+                        "aresta, bhaskara, horizonte e diagonal",
+                        "aresta, base, lado, altura e diagonal"
+                    ],
+                    "correct": "d",
+                    "explainId": 1
+                },
+                {
+                    "id": 2,
+                    "type": "select",
+                    "question": "Primas e pirâmides fazem parte de qual conteúdo?",
+                    "alternatives": [
+                        "geometria espacial",
+                        "geometria plana",
+                        "geometria analítica ",
+                        "Estatística"
+                    ],
+                    "correct": "a",
+                    "explainId": 2
+                }
+            ],
+            "ExplainCards": [
+                {
+                    "id": 1,
+                    "referenceId": 1,
+                    "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLGunwgKwYLZFar6JjIYiGVh2gQxbflZukg&usqp=CAU"
+                },
+                {
+                    "id": 2,
+                    "referenceId": 2,
+                    "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
+                    "image": "https://s3.static.brasilescola.uol.com.br/img/2016/04/equacao-do-segundo-grau.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
             "name": "Bhaskara",
             "description":"A fórmula de Bhaskara é uma das alternativas de resolução de uma equação do 2° grau.",
             "Cards": [
@@ -42,13 +89,13 @@
                 {
                     "id": 2,
                     "referenceId": 2,
-                    "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
+                    "explain": "",
                     "image": "https://s3.static.brasilescola.uol.com.br/img/2016/04/equacao-do-segundo-grau.jpg"
                 }
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "outro ",
             "description":"Breve descrição desse conteudo que plmds",
             "Cards": [

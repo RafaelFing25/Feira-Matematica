@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ramonak/react-progress-bar": "^5.0.2",
     "@reduxjs/toolkit": "^1.8.5",
     "next": "12.2.5",
     "next-redux-wrapper": "^7.0.5",
