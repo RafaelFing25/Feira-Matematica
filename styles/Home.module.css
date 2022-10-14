@@ -1,60 +1,71 @@
 .container {
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(#8E05C2, #0a000e);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.side{
-  width: 200px;
-  height: 500px;
-  background-color: #8E05C2;
-  margin-left:10px;
-  display: flex;
-  align-items: center;
-  padding: 20px ;
-  border-radius: 5px;
-}
-
-
-
-.option{
-  background: rgb(112,11,151);
-background: linear-gradient(217deg, rgba(112,11,151,1) 17%, rgba(142,5,194,1) 50%, rgba(62,6,95,1) 97%);
-border-radius: 20px;
-padding: 10px;
-}
-
-.content{
-  margin-left: 300px;
-}
-
-
-@media only screen and (max-width: 850px) {
-
-  .container{
-    display: block;
-    background-color: #eeebf0;
-  }
-
-  .content{
-    display: flex;
-  }
-
-  .content h1{
-    display: none;
-  };
-
-  .side{
     width: 100vw;
     height: 100vh;
-    background-color: #e8e6e9;
-    margin: 0px;
-    padding: 0px;
+    background-image: linear-gradient(#8E05C2, #0a000e);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .side{
+    width: 200px;
+    height: 500px;
+    background-color: #8E05C2;
+    margin-left:10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 20px ;
+    border-radius: 5px;
   }
-}
+  
+  
+  
+  .option{
+    background: rgb(112,11,151);
+  background: linear-gradient(217deg, rgba(112,11,151,1) 17%, rgba(142,5,194,1) 50%, rgba(62,6,95,1) 97%);
+  border-radius: 20px;
+  padding: 10px;
+  }
+  
+  .content{
+    margin-left: 300px;
+  }
+  
+  .mobileContainer{
+    display: none;
+  }
+  .play{
+    display: none;
+  }
+  @media only screen and (max-width: 850px) {
+    .play{display: flex;}
+    .container{
+      display: none;
+      background-color: #eeecf0;
+    }
+  
+    .mobileContainer{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: #8E05C2;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileContainer h1{
+        text-align: center;
+    }
+    .options{
+        margin-top:30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .option{
+        width: 100%;
+        height: 70px;
+    }
+  }
+  
