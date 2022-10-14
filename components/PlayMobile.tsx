@@ -21,21 +21,21 @@ const PlayMobile: React.FC<Props> = ({backFunc}) => {
                 </div>
             </div>
             <div className={styles.content}>
-                <div>
                     <Link href="/estudo">
+                <div>
                         <a>Estudo</a>
-                    </Link>
                 </div>
-                <div>
+                    </Link>
                     <Link href="/game">
+                <div>
                         <a>Competitivo (Em breve)</a>
-                    </Link>
                 </div>
-                <div>
+                    </Link>
                     <Link href="/game">
+                <div>
                         <a>Casual (Em breve)</a>
-                    </Link>
                 </div>
+                    </Link>
             </div>
         </div>
     );
