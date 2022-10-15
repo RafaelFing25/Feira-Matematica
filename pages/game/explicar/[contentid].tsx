@@ -14,13 +14,13 @@ interface props {
 const GamePage: NextPage<props> = ({ mode }) => {
 
   const props = {
-    explainCards: db.Contents[0].ExplainCards,
+    explainCard: db.Contents[0].ExplainCard,
     cards: db.Contents[0].Cards
   }
 
   const { query } = useRouter()
   if (query.contentid) {
-    props.explainCards = db.Contents[query.contentid as unknown as number - 1].ExplainCards || undefined
+    props.explainCard = db.Contents[query.contentid as unknown as number - 1].ExplainCard || undefined
     props.cards = db.Contents[query.contentid as unknown as number - 1].Cards || undefined
   }
   return (
@@ -34,7 +34,7 @@ const GamePage: NextPage<props> = ({ mode }) => {
         !query.contentid ? 'Caregando' :
           <Game
 
-            explainCards={props.explainCards}
+            explainCard={props.explainCard}
             cards={props.cards} />
       }
     </div>

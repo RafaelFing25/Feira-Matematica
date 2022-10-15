@@ -15,14 +15,14 @@ interface Contents{
         question: string;
         alternatives: string[];
         correct: string;
-        explainId: number;
+
     }[];
-    ExplainCards: {
+    ExplainCard: {
         id: number;
         referenceId: number;
         explain: string;
         image: string;
-    }[];
+    };
 }
 
 const Estudo:NextPage = () => {

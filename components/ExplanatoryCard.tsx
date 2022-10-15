@@ -23,9 +23,9 @@ const ExplanatoryCard: React.FC<Props> = ({img, children , advance}) => {
                 <h1>Entenda:</h1>
             </div>
             <div className={styles.explain}>
-                <p>{children}</p>
+                <p dangerouslySetInnerHTML={ {__html: children }}></p>
                 {img ?
-                <Image src={img} width={200} height={200} alt="test" /> : ''
+                <Image src={img} width={600} height={600} alt="test" /> : ''
             }
                 
             </div>

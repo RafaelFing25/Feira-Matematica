@@ -14,14 +14,13 @@ interface Props {
       question: string;
       alternatives: string[];
       correct: string;
-      explainId: number;
     }[];
-    ExplainCards: {
+    ExplainCard: {
       id: number;
       referenceId: number;
       explain: string;
       image: string;
-    }[];
+    };
   }
 }
 
@@ -34,7 +33,7 @@ const MiniCard: React.FC<Props> = ({ content }) => {
   return (
     <div onClick={initGame} className={styles.container}>
       <h1>{content.name}</h1>
-      <p>{content.description}</p>
+      <p><div dangerouslySetInnerHTML={{ __html: content.description }} /></p>
     </div>
   )
 }
