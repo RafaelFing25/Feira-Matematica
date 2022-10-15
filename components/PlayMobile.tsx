@@ -13,7 +13,7 @@ const PlayMobile: React.FC<Props> = ({backFunc}) => {
         <div className={styles.container}>
             <div className={styles.top}>
                 <div className={styles.img} onClick={backFunc}>
-                    <img src="http://localhost:8080/backbutton.png" alt="" />
+                    <img src="http://imageprovider.herokuapp.com/backbutton.png" alt="" />
                 </div>
                 <div className={styles.text}>
                     <h1>Jogar</h1>

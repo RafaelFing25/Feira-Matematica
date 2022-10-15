@@ -70,7 +70,7 @@
                 "id": 1,
                 "referenceId": 1,
                 "explain": "A Geometria é dividida em três categorias:<br>Geometria Analítica <br> Geometria Plana<br>Geometria Espacial<br><br>Assim, a geometria analítica, também chamada de geometria cartesiana, une conceitos de álgebra e geometria através dos sistemas de coordenadas. Os conceitos mais utilizados são o ponto e a reta.\nEnquanto a geometria plana ou euclidiana reúne os estudos sobre as figuras planas, ou seja, as que não apresentam volume, a geometria espacial estuda as figuras geométricas que possuem volume e mais de uma dimensão.",
-                "image": "http://localhost:8080/formulasFigurasPlana.jpg"
+                "image": "http://imageprovider.herokuapp.com/formulasFigurasPlana.jpg"
             }
         },
         {
@@ -109,7 +109,7 @@
                 "id": 1,
                 "referenceId": 1,
                 "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
-                "image": "localhost:8080/demonstracao-teorema-pitagoras-2.gif"
+                "image": "http://imageprovider.herokuapp.com/demonstracao-teorema-pitagoras-2.gif"
             }
         },
         {
@@ -146,7 +146,7 @@
                 "id": 1,
                 "referenceId": 1,
                 "explain": "A matriz é uma representação de dados, geralmente numéricos, divididos por linhas e colunas. Uma matriz é representada da forma Amxn. Assim, temos a matriz A, que possui m linhas e n colunas. A matriz M3x2, por exemplo, possui três linhas e duas colunas. A matriz contém termos representados por aij, em que i é a linha que o termo ocupa e j é a coluna que o termo ocupa.<br>Existem tipos especiais de matriz. Veja abaixo os principais deles.Matriz linha<br>Matriz coluna<br>Matriz quadrada<br>Matriz nula<br>Matriz identidade",
-                "image": "http://localhost:8080/matrizes.png"
+                "image": "http://imageprovider.herokuapp.com/matrizes.png"
             }
         }
     ]
