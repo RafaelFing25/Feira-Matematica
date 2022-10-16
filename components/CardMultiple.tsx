@@ -74,7 +74,7 @@ const CardMultiple: React.FC<CardProps> = ({ question, alternatives, onCheck }) 
       </div>
       <div className={styles.question}>
         <div className={styles.questionText}>
-          <p>{question}</p>
+          <p dangerouslySetInnerHTML={{__html:question}}></p>
         </div>
         <div className={styles.alternatives}>
           <Input onClick={makeSelect} selected={selectedLetter} letter='a'>

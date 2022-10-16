@@ -7,13 +7,14 @@ import styles from '../styles/components/explanatory.module.css'
 interface Props{
     img?: string,
     children: string,
+    link:string,
     advance:()=>void
 }
 
-const ExplanatoryCard: React.FC<Props> = ({img, children , advance}) => {
+const ExplanatoryCard: React.FC<Props> = ({link,img, children , advance}) => {
 
     function moreAbout(){
-        window.location.href = 'https://google.com'
+        window.open(link,"_blank")
     }
 
 
@@ -25,7 +26,7 @@ const ExplanatoryCard: React.FC<Props> = ({img, children , advance}) => {
             <div className={styles.explain}>
                 <p dangerouslySetInnerHTML={ {__html: children }}></p>
                 {img ?
-                <Image src={img} width={600} height={600} alt="test" /> : ''
+                <Image src={img} width={600} height={600} alt="" /> : ''
             }
                 
             </div>

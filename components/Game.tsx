@@ -24,6 +24,7 @@ interface ExplainCards {
   referenceId: number;
   explain: string;
   image: string;
+  link: string;
 }
 
 interface Props {
@@ -72,6 +73,7 @@ const Game: React.FC<Props> = ({ cards, explainCard }) => {
         <ExplanatoryCard
           img={explainCard.image}
           advance={()=>{Router.push('/estudo')}}
+          link={explainCard.link}
         >{explainCard.explain}</ExplanatoryCard>
       )
     } else if (render == 'wrong') {

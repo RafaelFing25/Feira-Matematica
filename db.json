@@ -70,7 +70,8 @@
                 "id": 1,
                 "referenceId": 1,
                 "explain": "A Geometria é dividida em três categorias:<br>Geometria Analítica <br> Geometria Plana<br>Geometria Espacial<br><br>Assim, a geometria analítica, também chamada de geometria cartesiana, une conceitos de álgebra e geometria através dos sistemas de coordenadas. Os conceitos mais utilizados são o ponto e a reta.\nEnquanto a geometria plana ou euclidiana reúne os estudos sobre as figuras planas, ou seja, as que não apresentam volume, a geometria espacial estuda as figuras geométricas que possuem volume e mais de uma dimensão.",
-                "image": "http://imageprovider.herokuapp.com/formulasFigurasPlana.jpg"
+                "image": "http://imageprovider.herokuapp.com/formulasFigurasPlana.jpg",
+                "link": "https://www.todamateria.com.br/matematica/geometria/"
             }
         },
         {
@@ -109,7 +110,8 @@
                 "id": 1,
                 "referenceId": 1,
                 "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
-                "image": "http://imageprovider.herokuapp.com/demonstracao-teorema-pitagoras-2.gif"
+                "image": "http://imageprovider.herokuapp.com/demonstracao-teorema-pitagoras-2.gif",
+                "link": "https://infoescola.com"
             }
         },
         {
@@ -120,7 +122,7 @@
                 {
                     "id": 1,
                     "type": "select",
-                    "question": "O elemento que correspondente à 'a22'na matriz à seguir é:<br> |7 8|<br>|10 13|",
+                    "question": "O elemento que correspondente à 'a22'na matriz à seguir é:<br> |&nbsp;7 &nbsp;&nbsp;8&nbsp;|<br>|10 13|",
                     "alternatives": [
                         "7",
                         "-8",
@@ -146,7 +148,8 @@
                 "id": 1,
                 "referenceId": 1,
                 "explain": "A matriz é uma representação de dados, geralmente numéricos, divididos por linhas e colunas. Uma matriz é representada da forma Amxn. Assim, temos a matriz A, que possui m linhas e n colunas. A matriz M3x2, por exemplo, possui três linhas e duas colunas. A matriz contém termos representados por aij, em que i é a linha que o termo ocupa e j é a coluna que o termo ocupa.<br>Existem tipos especiais de matriz. Veja abaixo os principais deles.Matriz linha<br>Matriz coluna<br>Matriz quadrada<br>Matriz nula<br>Matriz identidade",
-                "image": "http://imageprovider.herokuapp.com/matrizes.png"
+                "image": "http://imageprovider.herokuapp.com/matrizes.png",
+                "link": "https://mundoeducacao.uol.com.br/matematica/matriz-1.htm"
             }
         },
         {
@@ -207,7 +210,8 @@
                 "id": 1,
                 "referenceId": 1,
                 "explain": "Chamamos de conjunto toda e qualquer coleção de elementos. Estes elementos podem ser números, objetos, figuras, pessoas, animais e tudo o que podemos ordenar, catalogar ou reunir em grupos de seus elementos. Por exemplo: Se quisermos construir o conjunto de crianças de uma escola que possuam exatos 10 anos de idade, podemos dizer que o conjunto é composto pelos alunos Pedrinho, Joãozinho, Mariazinha, ..., e todos os alunos que tenham 10 anos de idade na escola. Matematicamente, quase sempre os conjuntos serão compostos por números e que dependam de algumas condições",
-                "image": "https://imageprovider.herokuapp.com/conjuntos.jpg"
+                "image": "https://imageprovider.herokuapp.com/conjuntos.jpg",
+                "link": "https://www.infoescola.com/matematica/teoria-dos-conjuntos/"
             }
         },
         {
@@ -268,7 +272,58 @@
                 "id": 1,
                 "referenceId": 1,
                 "explain": "A função determina uma relação entre os elementos de dois conjuntos. Podemos defini-la utilizando uma lei de formação, em que, para cada valor de x, temos um valor de f(x). Chamamos x de domínio e f(x) ou y de imagem da função.A formalização matemática para a definição de função é dada por: Seja X um conjunto com elementos de x e Y um conjunto dos elementos de y.Assim sendo, cada elemento do conjunto x é levado a um único elemento do conjunto y. Essa ocorrência é determinada por uma lei de formação.A partir dessa definição, é possível constatar que x é a variável independente e que y é a variável dependente. Isso porque, em toda função, para encontrar o valor de y, devemos ter inicialmente o valor de x.",
-                "image": "img"
+                "image": "http://imageprovider.herokuapp.com",
+                "link":"https://brasilescola.uol.com.br/matematica/sistemas-lineares.htm"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Sistemas Lineares",
+            "description": "Sistemas lineares são formados por duas ou mais equações lineares que possuem suas incógnitas relacionadas.",
+            "Cards": [
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "Sistemas lineares:",
+                    "alternatives": [
+                        "É usada para sulocionar funcões do 2 grau",
+                        "É o conjunto de duas ou mais equações com uma ou mais inógnitas",
+                        "É um número real associado à matriz",
+                        "São numeros lineares"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "Em um estacionamento, há motos e carros, em um total de 25 veículos. Sabendo há 74 rodas nesse estacionamento, podemos afirmar que",
+                    "alternatives": [
+                        "Há 1 carro a mais que a quantidade de motos.",
+                        "Há 2 carros a mais que a quantidade de motos.",
+                        "Há 1 moto a mais que a quantidade de carros.",
+                        "Há 2 motos a mais que a quantidade de carros."
+                    ],
+                    "correct": "c"
+                },
+                {
+                    "id": 3,
+                    "type": "select",
+                    "question": "São considerados métodos de resolução de sistemas lineares, exceto:",
+                    "alternatives": [
+                        "Regra de Cramer",
+                        "Escalonamento",
+                        "Método da adição",
+                        "Balanceamento"
+                    ],
+                    "correct": "d"
+                }
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "Resolver sistemas lineares é uma tarefa bastante recorrente para estudos nas áreas das ciências da natureza e da matemática. A busca por valores desconhecidos fez com que fossem desenvolvidos métodos de resolução de sistemas lineares, como o método da adição, igualdade e substituição para sistemas que possuem duas equações e duas incógnitas, e a regra de Crammer e o escalonamento, que resolvem sistemas lineares de duas equações, mas que são mais convenientes para sistemas  com mais equações. Um sistema linear é um conjunto de duas ou mais equações com uma ou mais incógnitas.",
+                "image": "http://imageprovider.herokuapp.com/sistema-linear.png",
+                "link":"https://brasilescola.uol.com.br/matematica/sistemas-lineares.htm"
             }
         }
     ]
