@@ -16,7 +16,7 @@ interface Card {
   question: string;
   alternatives: string[];
   correct: string;
-  explainId: number;
+
 }
 
 interface ExplainCards {
@@ -24,17 +24,18 @@ interface ExplainCards {
   referenceId: number;
   explain: string;
   image: string;
+  link: string;
 }
 
 interface Props {
   cards: Array<Card>,
-  explainCards: Array<ExplainCards>
+  explainCard: ExplainCards
 }
 
-db.Contents[0].ExplainCards
 
 
-const Game: React.FC<Props> = ({ cards, explainCards }) => {
+
+const Game: React.FC<Props> = ({ cards, explainCard }) => {
 
   useEffect(() => {
     setSequence(cards)
@@ -46,7 +47,7 @@ const Game: React.FC<Props> = ({ cards, explainCards }) => {
 
   function advance(){
     if(currentCard +1 >= cards.length){
-      Router.push('/estudo')
+      setRenderTime('explain')
     }else{
       SetCurrentCard(currentCard + 1)
       setRenderTime('card')
@@ -67,12 +68,13 @@ const Game: React.FC<Props> = ({ cards, explainCards }) => {
       } else
         return <div></div>
     } else if (render == 'explain') {
-      const nowExplain = explainCards[currentCard]
+      const nowExplain = explainCard
       return (
         <ExplanatoryCard
-          img={nowExplain.image}
-          advance={advance}
-        >{nowExplain.explain}</ExplanatoryCard>
+          img={explainCard.image}
+          advance={()=>{Router.push('/estudo')}}
+          link={explainCard.link}
+        >{explainCard.explain}</ExplanatoryCard>
       )
     } else if (render == 'wrong') {
       const letter = cards[currentCard].correct
@@ -81,13 +83,13 @@ const Game: React.FC<Props> = ({ cards, explainCards }) => {
       return (
         <Wrong
           correct={cards[currentCard].alternatives[index]}
-          onClick={() => { setRenderTime('explain') }}
+          onClick={() => { advance() }}
         />
       )
     } else if (render == 'right') {
       return (
         <Right
-          onClick={() => { setRenderTime('explain') }}
+          onClick={() => {advance()}}
         />
       )
     }

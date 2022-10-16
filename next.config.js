@@ -4,9 +4,8 @@ const nextConfig = {
   swcMinify: true,
   images: {
     domains:[
-      "www.matematica.pt",
-      "encrypted-tbn0.gstatic.com",
-      "s3.static.brasilescola.uol.com.br"
+      "imageprovider.herokuapp.com"
+      
     ]
   }
 }

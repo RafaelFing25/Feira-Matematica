@@ -22,7 +22,7 @@ const Home: NextPage<Props> = () => {
       <div>
         <div className={styles.container}>
           <Head>
-            <title>Feirinha</title>
+            <title>Matematiquizando</title>
             <meta name="description" content="app feira" />
             <link rel="icon" href="/favicon.ico" />
 
@@ -37,7 +37,7 @@ const Home: NextPage<Props> = () => {
           </div>
 
           <div className={styles.content}>
-            <h1>Seja bem vindo!</h1>
+            <h1>Matematiquizando</h1>
             {play ? <Play /> : ''}
           </div>
 

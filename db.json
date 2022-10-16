@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Geometria",
-            "description":"A geometria é uma área da matemática que estuda as formas geométricas desde comprimento, área e volume.",
+            "description": "A geometria é uma área da matemática que estuda as formas geométricas desde comprimento, área e volume.",
             "Cards": [
                 {
                     "id": 1,
@@ -15,8 +15,7 @@
                         "aresta, bhaskara, horizonte e diagonal",
                         "aresta, base, lado, altura e diagonal"
                     ],
-                    "correct": "d",
-                    "explainId": 1
+                    "correct": "d"
                 },
                 {
                     "id": 2,
@@ -28,29 +27,57 @@
                         "geometria analítica ",
                         "Estatística"
                     ],
-                    "correct": "a",
-                    "explainId": 2
-                }
-            ],
-            "ExplainCards": [
-                {
-                    "id": 1,
-                    "referenceId": 1,
-                    "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
-                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLGunwgKwYLZFar6JjIYiGVh2gQxbflZukg&usqp=CAU"
+                    "correct": "a"
                 },
                 {
-                    "id": 2,
-                    "referenceId": 2,
-                    "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
-                    "image": "https://s3.static.brasilescola.uol.com.br/img/2016/04/equacao-do-segundo-grau.jpg"
+                    "id": 3,
+                    "type": "select",
+                    "question": "Qual a área da base de um prisma?",
+                    "alternatives": [
+                        " l²",
+                        "πr² ",
+                        "b•h/2",
+                        "Depende do formato que a base apresenta"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 4,
+                    "type": "select",
+                    "question": "Fazem parte de uma pirâmide:",
+                    "alternatives": [
+                        "Base, vértice, altura/eixo, face lateral, arestas laterais, apótema e arestas da base",
+                        "Base, vértice, altura/eixo, arestas laterais e arestas da base",
+                        "Base, aresta lateral, arestas da base e face lateral",
+                        "Base e altura"
+                    ],
+                    "correct": "a"
+                },
+                {
+                    "id": 5,
+                    "type": "select",
+                    "question": "Qual a fórmula do volume de uma pirâmide?",
+                    "alternatives": [
+                        "V= a²",
+                        "V= a.b.c",
+                        "V= Ab • H / 3",
+                        "V= Ab . h"
+                    ],
+                    "correct": "c"
                 }
-            ]
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "A Geometria é dividida em três categorias:<br>Geometria Analítica <br> Geometria Plana<br>Geometria Espacial<br><br>Assim, a geometria analítica, também chamada de geometria cartesiana, une conceitos de álgebra e geometria através dos sistemas de coordenadas. Os conceitos mais utilizados são o ponto e a reta.\nEnquanto a geometria plana ou euclidiana reúne os estudos sobre as figuras planas, ou seja, as que não apresentam volume, a geometria espacial estuda as figuras geométricas que possuem volume e mais de uma dimensão.",
+                "image": "http://imageprovider.herokuapp.com/formulasFigurasPlana.jpg",
+                "link": "https://www.todamateria.com.br/matematica/geometria/"
+            }
         },
         {
             "id": 2,
             "name": "Bhaskara",
-            "description":"A fórmula de Bhaskara é uma das alternativas de resolução de uma equação do 2° grau.",
+            "description": "A fórmula de Bhaskara é uma das alternativas de resolução de uma equação do 2° grau.",
             "Cards": [
                 {
                     "id": 1,
@@ -79,66 +106,225 @@
                     "explainId": 2
                 }
             ],
-            "ExplainCards": [
-                {
-                    "id": 1,
-                    "referenceId": 1,
-                    "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
-                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFLGunwgKwYLZFar6JjIYiGVh2gQxbflZukg&usqp=CAU"
-                },
-                {
-                    "id": 2,
-                    "referenceId": 2,
-                    "explain": "",
-                    "image": "https://s3.static.brasilescola.uol.com.br/img/2016/04/equacao-do-segundo-grau.jpg"
-                }
-            ]
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "A letra x é a incógnita, e as letras a, b e c são números reais que exercem a função de coeficientes. Para que a equação seja do 2° grau, é necessário que a ≠ 0. Além disso, se os coeficientes b e c forem nulos (iguais a zero), a equação será incompleta. As equações do 2° grau podem possuir até dois resultados, que são chamados de raízes da equação. \n O exemplo abaixo representa uma equação incompleta com o b=0",
+                "image": "http://imageprovider.herokuapp.com/demonstracao-teorema-pitagoras-2.gif",
+                "link": "https://infoescola.com"
+            }
         },
         {
             "id": 3,
-            "name": "outro ",
-            "description":"Breve descrição desse conteudo que plmds",
+            "name": "Matrizes ",
+            "description": "A matriz é uma representação de dados, geralmente numéricos, divididos por linhas e colunas",
             "Cards": [
                 {
                     "id": 1,
                     "type": "select",
-                    "question": "puta que parioo",
+                    "question": "O elemento que correspondente à 'a22'na matriz à seguir é:<br> |&nbsp;7 &nbsp;&nbsp;8&nbsp;|<br>|10 13|",
                     "alternatives": [
-                        "sim",
-                        "nao",
-                        "isoo é um teste pra q responder",
-                        "alternativa 4"
+                        "7",
+                        "-8",
+                        "10",
+                        "13"
                     ],
-                    "correct": "c",
-                    "explainId": 1
+                    "correct": "d"
                 },
                 {
                     "id": 1,
                     "type": "select",
-                    "question": "pensoo?",
+                    "question": "A matriz à seguir é de que tipo?<br>|0 0|<br>|0 0|",
                     "alternatives": [
-                        "sim",
-                        "nao",
-                        "ghkjhgj",
-                        "lololoolo"
+                        "Transporta",
+                        "Nula",
+                        "Triangular",
+                        "Linha"
                     ],
-                    "correct": "d",
-                    "explainId": 1
+                    "correct": "b"
                 }
             ],
-            "ExplainCards": [
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "A matriz é uma representação de dados, geralmente numéricos, divididos por linhas e colunas. Uma matriz é representada da forma Amxn. Assim, temos a matriz A, que possui m linhas e n colunas. A matriz M3x2, por exemplo, possui três linhas e duas colunas. A matriz contém termos representados por aij, em que i é a linha que o termo ocupa e j é a coluna que o termo ocupa.<br>Existem tipos especiais de matriz. Veja abaixo os principais deles.Matriz linha<br>Matriz coluna<br>Matriz quadrada<br>Matriz nula<br>Matriz identidade",
+                "image": "http://imageprovider.herokuapp.com/matrizes.png",
+                "link": "https://mundoeducacao.uol.com.br/matematica/matriz-1.htm"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Conjuntos",
+            "description": "Chamamos de conjunto toda e qualquer coleção de elementos. Estes elementos podem ser números, objetos, figuras, pessoas, animais e tudo o que podemos ordenar, catalogar ou reunir em grupos de seus elementos.",
+            "Cards": [
                 {
                     "id": 1,
-                    "referenceId": 1,
-                    "explain": "Lorem lorem dolor sit amet, consectetur adipiscing elit. Proin a augue vel neque facilisis ullamcorper a ac est. Donec sagittis lacinia facilisis. Vestibulum fringilla congue fringilla. Aenean mollis pulvinar ante vitae sagittis. Mauris porttitor nulla vulputate, efficitur lacus at, accumsan tortor. Ut sollicitudin mi eget ante blandit finibus. Nulla facilisi. In mattis turpis sodales nulla luctus, in tempor nisi rhoncus. Cras finibus sit amet augue sit amet vestibulum. Cras dignissim egestas urna, finibus volutpat diam porta quis. Morbi scelerisque ut erat vitae commodo. Phasellus vitae risus in augue viverra vestibulum. Integer id pharetra nisi. Phasellus non porttitor ligula, ut posuere libero. Sed non scelerisque justo. Vestibulum elementum, est eget euismod rhoncus, sapien nunc dignissim libero, eget semper velit lacus eu arcu.",
-                    "image": "https://www.matematica.pt/images/faq/demonstracao-teorema-pitagoras-2.gif"
-                },{
-                    "id": 1,
-                    "referenceId": 1,
-                    "explain": "loreum t, consectetur adipiscing elit. Proin a augue vel neque facilisis ullamcorper a ac est. Donec sagittis lacinia facilisis. Vestibulum fringilla congue fringilla. Aenean mollis pulvinar ante vitae sagittis. Mauris porttitor nulla vulputate, efficitur lacus at, accumsan tortor. Ut sollicitudin mi eget ante blandit finibus. Nulla facilisi. In mattis turpis sodales nulla luctus, in tempor nisi rhoncus. Cras finibus sit amet augue sit amet vestibulum. Cras dignissim egestas urna, finibus volutpat diam porta quis. Morbi scelerisque ut erat vitae commodo. Phasellus vitae risus in augue viverra vestibulum. Integer id pharetra nisi. Phasellus non porttitor ligula, ut posuere libero. Sed non scelerisque justo. Vestibulum elementum, est eget euismod rhoncus, sapien nunc dignissim libero, eget semper velit lacus eu arcu.",
-                    "image": "https://www.matematica.pt/images/faq/demonstracao-teorema-pitagoras-2.gif"
+                    "type": "select",
+                    "question": "Oque significam os simbolos ∩ e U respectivamente?",
+                    "alternatives": [
+                        "Interseção e união",
+                        "Contém e Contido",
+                        "Contido e união",
+                        "Interseção e contém"
+                    ],
+                    "correct": "a"
+                },
+                {
+                    "id": 2,
+                    "type": "select",
+                    "question": "Sejam A , B e C conjuntos quaisquer. Ecolha a alternativa CORRETA.",
+                    "alternatives": [
+                        "(A∪B)∩C=A∪(B∩C)",
+                        "Se A⊂B e C⊂B então A⊂C",
+                        "Se A∩B=∅ e B⊂C então A∩C=∅",
+                        "Se A∩B=∅ e C⊂B então A∩C=∅"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 3,
+                    "type": "select",
+                    "question": "Em uma sala, de 20 alunos, 8 gostam de sorvete de chocolate, 7 gostam de sorvete de creme e 6 gostam dos dois sabores. Quantos alunos não gostam de nenhum dos dois sabores?",
+                    "alternatives": [
+                        "11",
+                        "13",
+                        "9",
+                        "8"
+                    ],
+                    "correct": "a"
+                },
+                {
+                    "id": 4,
+                    "type": "select",
+                    "question": "Sabendo que A = {0, 1, 2, 3, 4, 5, 6}, B = {6, 7, 8, 9} e C = {2, 4, 6, 8, 10}, quais são os elementos do conjunto (A∩B)UC?",
+                    "alternatives": [
+                        "Os mesmos do conjunto A",
+                        "Os mesmos do conjunto B",
+                        "{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}",
+                        "Os mesmos do conjunto C"
+                    ],
+                    "correct": "d"
                 }
-            ]
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "Chamamos de conjunto toda e qualquer coleção de elementos. Estes elementos podem ser números, objetos, figuras, pessoas, animais e tudo o que podemos ordenar, catalogar ou reunir em grupos de seus elementos. Por exemplo: Se quisermos construir o conjunto de crianças de uma escola que possuam exatos 10 anos de idade, podemos dizer que o conjunto é composto pelos alunos Pedrinho, Joãozinho, Mariazinha, ..., e todos os alunos que tenham 10 anos de idade na escola. Matematicamente, quase sempre os conjuntos serão compostos por números e que dependam de algumas condições",
+                "image": "https://imageprovider.herokuapp.com/conjuntos.jpg",
+                "link": "https://www.infoescola.com/matematica/teoria-dos-conjuntos/"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Funções",
+            "description": "Uma função é uma regra que relaciona cada elemento de um conjunto a um único elemento de outro",
+            "Cards": [
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "Uma prestadora de serviços cobra pela visita à residência do cliente e pelo tempo necessário para realizar o serviço na residência.O valor da visita é R$ 40 e o valor da hora para realização do serviço é R$ 20.Uma expressão que indica o valor a ser pago (P) em função das horas (h) necessárias à execução do serviço é:",
+                    "alternatives": [
+                        "P = 40h ",
+                        "P = 60h",
+                        "P = 20 + 40h",
+                        "P = 40 + 20h"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 2,
+                    "type": "select",
+                    "question": "Seja a função f definida por f(x) = 3x – 2, determine o valor de f(5) + f(0):",
+                    "alternatives": [
+                        "10",
+                        "11",
+                        "12",
+                        "13"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "id": 3,
+                    "type": "select",
+                    "question": "Dadas as funções f(x) = x – 5 e g(x) = 3x + 1, o valor da soma de f(9) + g(2) é:",
+                    "alternatives": [
+                        "8",
+                        "11",
+                        "13",
+                        "5"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "id": 4,
+                    "type": "select",
+                    "question": "Nа рrоduçãо dе реçаѕ, umа fábrіса tеm um сuѕtо fіхо dе R$ 16,00 mаіѕ um сuѕtо vаrіávеl dе R$ 1,50 роr unіdаdе рrоduzіdа. Ѕеndо х о númеrо dе реçаѕ unіtárіаѕ рrоduzіdаѕ, dеtеrmіnе а lеі dа funçãо quе fоrnесе о сuѕtо dа рrоduçãо dе х реçаѕ:",
+                    "alternatives": [
+                        "f(x) = 16x + 1,50",
+                        "f(x) = 1,50x – 16",
+                        "f(x) = 16x – 1,50x",
+                        "f(x) = 1,50x + 16"
+                    ],
+                    "correct": "d"
+                }
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "A função determina uma relação entre os elementos de dois conjuntos. Podemos defini-la utilizando uma lei de formação, em que, para cada valor de x, temos um valor de f(x). Chamamos x de domínio e f(x) ou y de imagem da função.A formalização matemática para a definição de função é dada por: Seja X um conjunto com elementos de x e Y um conjunto dos elementos de y.Assim sendo, cada elemento do conjunto x é levado a um único elemento do conjunto y. Essa ocorrência é determinada por uma lei de formação.A partir dessa definição, é possível constatar que x é a variável independente e que y é a variável dependente. Isso porque, em toda função, para encontrar o valor de y, devemos ter inicialmente o valor de x.",
+                "image": "http://imageprovider.herokuapp.com",
+                "link":"https://brasilescola.uol.com.br/matematica/sistemas-lineares.htm"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Sistemas Lineares",
+            "description": "Sistemas lineares são formados por duas ou mais equações lineares que possuem suas incógnitas relacionadas.",
+            "Cards": [
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "Sistemas lineares:",
+                    "alternatives": [
+                        "É usada para sulocionar funcões do 2 grau",
+                        "É o conjunto de duas ou mais equações com uma ou mais inógnitas",
+                        "É um número real associado à matriz",
+                        "São numeros lineares"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "Em um estacionamento, há motos e carros, em um total de 25 veículos. Sabendo há 74 rodas nesse estacionamento, podemos afirmar que",
+                    "alternatives": [
+                        "Há 1 carro a mais que a quantidade de motos.",
+                        "Há 2 carros a mais que a quantidade de motos.",
+                        "Há 1 moto a mais que a quantidade de carros.",
+                        "Há 2 motos a mais que a quantidade de carros."
+                    ],
+                    "correct": "c"
+                },
+                {
+                    "id": 3,
+                    "type": "select",
+                    "question": "São considerados métodos de resolução de sistemas lineares, exceto:",
+                    "alternatives": [
+                        "Regra de Cramer",
+                        "Escalonamento",
+                        "Método da adição",
+                        "Balanceamento"
+                    ],
+                    "correct": "d"
+                }
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "Resolver sistemas lineares é uma tarefa bastante recorrente para estudos nas áreas das ciências da natureza e da matemática. A busca por valores desconhecidos fez com que fossem desenvolvidos métodos de resolução de sistemas lineares, como o método da adição, igualdade e substituição para sistemas que possuem duas equações e duas incógnitas, e a regra de Crammer e o escalonamento, que resolvem sistemas lineares de duas equações, mas que são mais convenientes para sistemas  com mais equações. Um sistema linear é um conjunto de duas ou mais equações com uma ou mais incógnitas.",
+                "image": "http://imageprovider.herokuapp.com/sistema-linear.png",
+                "link":"https://brasilescola.uol.com.br/matematica/sistemas-lineares.htm"
+            }
         }
     ]
 }

@@ -22,7 +22,7 @@ const selecteds: Array<string> = []
 const CardMultiple: React.FC<CardProps> = ({ question, alternatives, onCheck }) => {
 
   const [selectedLetter, setSelectedLetter] = useState('')
-  const [time, setTime] = useState(20)
+  const [time, setTime] = useState(180)
 
   function makeSelect(event: React.MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) {
     //console.log(event.currentTarget.name)
@@ -74,7 +74,7 @@ const CardMultiple: React.FC<CardProps> = ({ question, alternatives, onCheck }) 
       </div>
       <div className={styles.question}>
         <div className={styles.questionText}>
-          <p>{question}</p>
+          <p dangerouslySetInnerHTML={{__html:question}}></p>
         </div>
         <div className={styles.alternatives}>
           <Input onClick={makeSelect} selected={selectedLetter} letter='a'>
