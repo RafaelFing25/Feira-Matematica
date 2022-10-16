@@ -52,7 +52,8 @@
                         "Base e altura"
                     ],
                     "correct": "a"
-                },{
+                },
+                {
                     "id": 5,
                     "type": "select",
                     "question": "Qual a fórmula do volume de uma pirâmide?",
@@ -64,7 +65,6 @@
                     ],
                     "correct": "c"
                 }
-                
             ],
             "ExplainCard": {
                 "id": 1,
@@ -147,6 +147,128 @@
                 "referenceId": 1,
                 "explain": "A matriz é uma representação de dados, geralmente numéricos, divididos por linhas e colunas. Uma matriz é representada da forma Amxn. Assim, temos a matriz A, que possui m linhas e n colunas. A matriz M3x2, por exemplo, possui três linhas e duas colunas. A matriz contém termos representados por aij, em que i é a linha que o termo ocupa e j é a coluna que o termo ocupa.<br>Existem tipos especiais de matriz. Veja abaixo os principais deles.Matriz linha<br>Matriz coluna<br>Matriz quadrada<br>Matriz nula<br>Matriz identidade",
                 "image": "http://imageprovider.herokuapp.com/matrizes.png"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Conjuntos",
+            "description": "Chamamos de conjunto toda e qualquer coleção de elementos. Estes elementos podem ser números, objetos, figuras, pessoas, animais e tudo o que podemos ordenar, catalogar ou reunir em grupos de seus elementos.",
+            "Cards": [
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "Oque significam os simbolos ∩ e U respectivamente?",
+                    "alternatives": [
+                        "Interseção e união",
+                        "Contém e Contido",
+                        "Contido e união",
+                        "Interseção e contém"
+                    ],
+                    "correct": "a"
+                },
+                {
+                    "id": 2,
+                    "type": "select",
+                    "question": "Sejam A , B e C conjuntos quaisquer. Ecolha a alternativa CORRETA.",
+                    "alternatives": [
+                        "(A∪B)∩C=A∪(B∩C)",
+                        "Se A⊂B e C⊂B então A⊂C",
+                        "Se A∩B=∅ e B⊂C então A∩C=∅",
+                        "Se A∩B=∅ e C⊂B então A∩C=∅"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 3,
+                    "type": "select",
+                    "question": "Em uma sala, de 20 alunos, 8 gostam de sorvete de chocolate, 7 gostam de sorvete de creme e 6 gostam dos dois sabores. Quantos alunos não gostam de nenhum dos dois sabores?",
+                    "alternatives": [
+                        "11",
+                        "13",
+                        "9",
+                        "8"
+                    ],
+                    "correct": "a"
+                },
+                {
+                    "id": 4,
+                    "type": "select",
+                    "question": "Sabendo que A = {0, 1, 2, 3, 4, 5, 6}, B = {6, 7, 8, 9} e C = {2, 4, 6, 8, 10}, quais são os elementos do conjunto (A∩B)UC?",
+                    "alternatives": [
+                        "Os mesmos do conjunto A",
+                        "Os mesmos do conjunto B",
+                        "{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}",
+                        "Os mesmos do conjunto C"
+                    ],
+                    "correct": "d"
+                }
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "Chamamos de conjunto toda e qualquer coleção de elementos. Estes elementos podem ser números, objetos, figuras, pessoas, animais e tudo o que podemos ordenar, catalogar ou reunir em grupos de seus elementos. Por exemplo: Se quisermos construir o conjunto de crianças de uma escola que possuam exatos 10 anos de idade, podemos dizer que o conjunto é composto pelos alunos Pedrinho, Joãozinho, Mariazinha, ..., e todos os alunos que tenham 10 anos de idade na escola. Matematicamente, quase sempre os conjuntos serão compostos por números e que dependam de algumas condições",
+                "image": "https://imageprovider.herokuapp.com/conjuntos.jpg"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Funções",
+            "description": "Uma função é uma regra que relaciona cada elemento de um conjunto a um único elemento de outro",
+            "Cards": [
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "Uma prestadora de serviços cobra pela visita à residência do cliente e pelo tempo necessário para realizar o serviço na residência.O valor da visita é R$ 40 e o valor da hora para realização do serviço é R$ 20.Uma expressão que indica o valor a ser pago (P) em função das horas (h) necessárias à execução do serviço é:",
+                    "alternatives": [
+                        "P = 40h ",
+                        "P = 60h",
+                        "P = 20 + 40h",
+                        "P = 40 + 20h"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 2,
+                    "type": "select",
+                    "question": "Seja a função f definida por f(x) = 3x – 2, determine o valor de f(5) + f(0):",
+                    "alternatives": [
+                        "10",
+                        "11",
+                        "12",
+                        "13"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "id": 3,
+                    "type": "select",
+                    "question": "Dadas as funções f(x) = x – 5 e g(x) = 3x + 1, o valor da soma de f(9) + g(2) é:",
+                    "alternatives": [
+                        "8",
+                        "11",
+                        "13",
+                        "5"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "id": 4,
+                    "type": "select",
+                    "question": "Nа рrоduçãо dе реçаѕ, umа fábrіса tеm um сuѕtо fіхо dе R$ 16,00 mаіѕ um сuѕtо vаrіávеl dе R$ 1,50 роr unіdаdе рrоduzіdа. Ѕеndо х о númеrо dе реçаѕ unіtárіаѕ рrоduzіdаѕ, dеtеrmіnе а lеі dа funçãо quе fоrnесе о сuѕtо dа рrоduçãо dе х реçаѕ:",
+                    "alternatives": [
+                        "f(x) = 16x + 1,50",
+                        "f(x) = 1,50x – 16",
+                        "f(x) = 16x – 1,50x",
+                        "f(x) = 1,50x + 16"
+                    ],
+                    "correct": "d"
+                }
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "A função determina uma relação entre os elementos de dois conjuntos. Podemos defini-la utilizando uma lei de formação, em que, para cada valor de x, temos um valor de f(x). Chamamos x de domínio e f(x) ou y de imagem da função.A formalização matemática para a definição de função é dada por: Seja X um conjunto com elementos de x e Y um conjunto dos elementos de y.Assim sendo, cada elemento do conjunto x é levado a um único elemento do conjunto y. Essa ocorrência é determinada por uma lei de formação.A partir dessa definição, é possível constatar que x é a variável independente e que y é a variável dependente. Isso porque, em toda função, para encontrar o valor de y, devemos ter inicialmente o valor de x.",
+                "image": "img"
             }
         }
     ]

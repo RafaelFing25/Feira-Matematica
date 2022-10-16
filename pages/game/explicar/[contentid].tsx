@@ -26,7 +26,7 @@ const GamePage: NextPage<props> = ({ mode }) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Feirinha</title>
+        <title>Matematiquizando - Estudo</title>
         <meta name="description" content="app feira" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
