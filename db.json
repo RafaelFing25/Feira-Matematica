@@ -323,8 +323,8 @@
                     "alternatives": [
                         "Método de comparação",
                         "Método de Adição",
-                        "c",
-                        "d"
+                        "Método da substituição",
+                        "Todas as anteriores"
                     ],
                     "correct": "d"
                 },
