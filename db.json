@@ -273,7 +273,7 @@
                 "referenceId": 1,
                 "explain": "A função determina uma relação entre os elementos de dois conjuntos. Podemos defini-la utilizando uma lei de formação, em que, para cada valor de x, temos um valor de f(x). Chamamos x de domínio e f(x) ou y de imagem da função.A formalização matemática para a definição de função é dada por: Seja X um conjunto com elementos de x e Y um conjunto dos elementos de y.Assim sendo, cada elemento do conjunto x é levado a um único elemento do conjunto y. Essa ocorrência é determinada por uma lei de formação.A partir dessa definição, é possível constatar que x é a variável independente e que y é a variável dependente. Isso porque, em toda função, para encontrar o valor de y, devemos ter inicialmente o valor de x.",
                 "image": "http://imageprovider.herokuapp.com",
-                "link":"https://brasilescola.uol.com.br/matematica/sistemas-lineares.htm"
+                "link": "https://brasilescola.uol.com.br/matematica/sistemas-lineares.htm"
             }
         },
         {
@@ -316,6 +316,29 @@
                         "Balanceamento"
                     ],
                     "correct": "d"
+                },{
+                    "id": 4,
+                    "type": "select",
+                    "question": "Qual desses métodos pode ser usado no sistema linear?",
+                    "alternatives": [
+                        "Método de comparação",
+                        "Método de Adição",
+                        "c",
+                        "d"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 5,
+                    "type": "select",
+                    "question": "Descubra o valor da determinante do sistema linear a seguir:<br><br>{ 2x + y = -1<br>{ 4x + 2 y = 3",
+                    "alternatives": [
+                        "D= 5",
+                        "D= 2",
+                        "D= 0",
+                        "D= 4"
+                    ],
+                    "correct": "c"
                 }
             ],
             "ExplainCard": {
@@ -323,7 +346,119 @@
                 "referenceId": 1,
                 "explain": "Resolver sistemas lineares é uma tarefa bastante recorrente para estudos nas áreas das ciências da natureza e da matemática. A busca por valores desconhecidos fez com que fossem desenvolvidos métodos de resolução de sistemas lineares, como o método da adição, igualdade e substituição para sistemas que possuem duas equações e duas incógnitas, e a regra de Crammer e o escalonamento, que resolvem sistemas lineares de duas equações, mas que são mais convenientes para sistemas  com mais equações. Um sistema linear é um conjunto de duas ou mais equações com uma ou mais incógnitas.",
                 "image": "http://imageprovider.herokuapp.com/sistema-linear.png",
-                "link":"https://brasilescola.uol.com.br/matematica/sistemas-lineares.htm"
+                "link": "https://brasilescola.uol.com.br/matematica/sistemas-lineares.htm"
+            }
+        },
+        {
+            "id": 7,
+            "name": "Determinate ",
+            "description": "Determinante é um número real associado à matriz, e somente matrizes quadradas o possuem.",
+            "Cards": [
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "Para o que serve uma determinante ?",
+                    "alternatives": [
+                        "Utilizada para resolver bhaskara",
+                        "Utilizada para resolver o teorema de Pitágoras",
+                        "Utilizada para resolver leis de Newton",
+                        "Utilizada para resolver sistemas lineares"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "A determinante a seguir é de qual  ordem?<br>|7 4|<br>|3 5|",
+                    "alternatives": [
+                        "Ordem 1x1",
+                        "Ordem 2x2",
+                        "Ordem 3x3",
+                        "Não existe essa ordem"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "id": 3,
+                    "type": "select",
+                    "question": "Qual regra se deve seguir para resolver uma determinante de ordem 3x3?",
+                    "alternatives": [
+                        "Regra de Pitágoras",
+                        "Regra de Cramer",
+                        "Regra de Einstein",
+                        "Regra de 3"
+                    ],
+                    "correct": "b"
+                }
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "Determinante da matriz é um valor que está associado à matriz. Utilizamos o determinante para resolução de sistemas lineares, para verificar se três pontos são colineares, entre outras aplicações. Calculamos o determinante de matrizes quadradas, ou seja, matrizes que têm o mesmo número de linha e de coluna.<br>A regra de Sarrus é um importante método de cálculo de determinante, utilizado principalmente no cálculo de matrizes de ordem 3 devido a sua complexidade, mas também no caso de matrizes de ordem 2. Existem algumas propriedades importantes para o cálculo de determinantes.",
+                "image": "http://imageprovider.herokuapp.com/determinante.png",
+                "link": "https://mundoeducacao.uol.com.br/matematica/determinante.htm"
+            }
+        },
+        {
+            "id": 8,
+            "name": "Análise combinatória",
+            "description": "A análise combinatória ou combinatória é a parte da Matemática que estuda métodos e técnicas que permitem resolver problemas relacionados com contagem.",
+            "Cards": [
+                {
+                    "id": 1,
+                    "type": "select",
+                    "question": "O que estuda a análise combinatória?",
+                    "alternatives": [
+                        "A quantidade de tempo",
+                        "A quantidade de possibilidades",
+                        "A quantidade de coisas",
+                        "A quantidade de números"
+                    ],
+                    "correct": "b"
+                },
+                {
+                    "id": 2,
+                    "type": "select",
+                    "question": "Com o que a análise combinatória pode ser utilizada?",
+                    "alternatives": [
+                        "Placas",
+                        "Senhas",
+                        "Times",
+                        "Todas as alternativas anteriores"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 3,
+                    "type": "select",
+                    "question": "Qual princípio é utilizado para resolver uma análise combinatória?",
+                    "alternatives": [
+                        "Princípio de pascal",
+                        "Princípio de Arquimedes",
+                        "Princípio da possibilidade",
+                        "Princípio Fundamental da Contagem"
+                    ],
+                    "correct": "d"
+                },
+                {
+                    "id": 4,
+                    "type": "select",
+                    "question": "qPossuo 3 blusas (azul, preta e rosa), três calças (preta, marrom e cinza) e dois pares de calçados. De quantas maneiras posso me vestir usando 1 blusa, 1 calça e 1 calçado?",
+                    "alternatives": [
+                        "18",
+                        "19",
+                        "16",
+                        "15"
+                    ],
+                    "correct": "a"
+                }
+            ],
+            "ExplainCard": {
+                "id": 1,
+                "referenceId": 1,
+                "explain": "Muito utilizada nos estudos sobre probabilidade, ela faz análise das possibilidades e das combinações possíveis entre um conjunto de elementos.",
+                "image": "http://imageprovider.herokuapp.com/analiseCombinatoria.png",
+                "link": "https://www.todamateria.com.br/analise-combinatoria/"
             }
         }
     ]
